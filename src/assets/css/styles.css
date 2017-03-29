@@ -869,7 +869,7 @@ section#features .media.active .media-heading {
   color: #66cdcc;
 }
 section#reviews {
-  background: url("../img/freeze/bk-freeze.jpg");
+ /* background: url("../img/freeze/410498.jpg");*/
 }
 section#reviews header {
   color: #ffffff;
@@ -1100,5 +1100,24 @@ form .form-control:focus {
 }
 .pre-loader {
   background: #336799;
+}
+
+.navback{
+  background: #66cdcc;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #66cdcc), color-stop(100%, #336799));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  /* IE10+ */
+  background: linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66cdcc, endColorstr=#336799, GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
 }
 
