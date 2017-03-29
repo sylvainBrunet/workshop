@@ -1,14 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-.video-container {
+.billy-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
   height: 0;
   overflow: hidden;
 }
-.video-container iframe,
-.video-container object,
-.video-container embed {
+.billy-container iframe,
+.billy-container object,
+.billy-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -390,7 +390,7 @@ section#screens .filter a {
   transition: all 0.25s ease-in-out;
 }
 /* demo video Section */
-section#demo .video-container {
+section#demo .billy-container {
   padding: 20px;
   border: 1px solid #b3b3b3;
   min-height: 450px;
