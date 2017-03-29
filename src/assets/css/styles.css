@@ -1121,3 +1121,14 @@ form .form-control:focus {
   /* IE6-9 fallback on horizontal gradient */
 }
 
+
+.btn.btn-orange.inverse {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.btn.btn-orange.inverse:hover {
+  color: #ffffff;
+  background: #ffbc00;
+  border-color: #ffbc00;
+}
+
