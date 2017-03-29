@@ -1,10 +1,23 @@
 <!doctype html>
-<html>
+<!--[if lt IE 7]><html lang="en" class="no-js ie6"><![endif]-->
+<!--[if IE 7]><html lang="en" class="no-js ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="no-js ie8"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
 <head>
-  <meta charset="utf-8">
-  <title>Workshop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8">
   <base href="/">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <title>The Fair Billy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="shortcut icon" href="favicon.png">
+
+
+  <!---<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.js"
@@ -12,10 +25,26 @@
     crossorigin="anonymous"></script>
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css" rel="stylesheet">
+  ---->
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Bootstrap 3.3.2 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/js/rs-plugin/css/settings.css">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+
+  <script type="text/javascript" src="assets/js/modernizr.custom.32033.js"></script>
+
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
   <app-root>Loading...</app-root>
@@ -61,5 +90,19 @@
 
     $('div.setup-panel div a.btn-primary').trigger('click');
   });</script>
+
+  <script src="assets/js/jquery-1.11.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/placeholdem.min.js"></script>
+  <script src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+  <script src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script>
+    $(document).ready(function() {
+      appMaster.preLoader();
+    });
+  </script>
 </body>
 </html>
