@@ -13,23 +13,23 @@
       </div>
       <div class="stepwizard-step">
         <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-        <p>Step 3</p>
+        <p>Mobilité</p>
       </div>
       <div class="stepwizard-step">
         <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
-        <p>Step 4</p>
+        <p>Repas</p>
       </div>
       <div class="stepwizard-step">
         <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">5</a>
-        <p>Step 5</p>
+        <p>Marchandises</p>
       </div>
       <div class="stepwizard-step">
         <a href="#step-6" type="button" class="btn btn-default btn-circle" disabled="disabled">6</a>
-        <p>Step 6</p>
+        <p>Marchandises suite</p>
       </div>
       <div class="stepwizard-step">
         <a href="#step-7" type="button" class="btn btn-default btn-circle" disabled="disabled">7</a>
-        <p>Step 7</p>
+        <p>Déchets</p>
       </div>
     </div>
   </div>
@@ -89,8 +89,133 @@
     <div class="row setup-content" id="step-3">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
-          <h3> Step 3</h3>
-          <button class="btn btn-success btn-lg pull-right" type="submit">Submit</button>
+          <h3> Mobilité</h3>
+          <div class="form-group">
+            <label class="control-label">Déplacement professionnel :</label>
+            <input  maxlength="100" type="text" class="form-control" placeholder="Total km/an"  />
+            <input  maxlength="100" type="text" class="form-control" placeholder="Déplacement doux( vélo, marche) : km/an"  />
+            <input  maxlength="100" type="text" class="form-control" placeholder="Voiture hybride : km/an"  />
+            <input  maxlength="100" type="text" class="form-control" placeholder="Voiture Electrique : km/an"  />
+          </div>
+          <div class="form-group">
+            <label class="control-label">Parking entreprise :</label>
+            <input maxlength="100" type="text" class="form-control" placeholder="Nombre d'employés véhiculés" />
+            <input maxlength="100" type="text" class="form-control" placeholder="Nombre de place occupées sur le parking" />
+          </div>
+
+          <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+        </div>
+      </div>
+    </div>
+    <div class="row setup-content" id="step-4">
+      <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
+          <h3> Repas :</h3>
+          <div class="col-md-6">
+            <div class="form-group">
+
+              <input  maxlength="100" type="text" class="form-control" placeholder="Cafétaria d'entreprise :"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Nombre de repas chaud(viande/poisson) /an :"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Nombre de repas chaud(végétarien) /an :"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Thé en kg /an :"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Boisson soft en L/an :"  />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input maxlength="100" type="text" class="form-control" placeholder="Eau en L/an :" />
+              <input maxlength="100" type="text" class="form-control" placeholder="Sucre en Kg/an :" />
+              <input maxlength="100" type="text" class="form-control" placeholder="Lait en L/an :" />
+              <input maxlength="100" type="text" class="form-control" placeholder="Café en kg/an :" />
+              <input maxlength="100" type="text" class="form-control" placeholder="Nombre de machine associées (Frigo, Micro-onde, etc …) :" />
+
+            </div>
+          </div>
+          <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+        </div>
+      </div>
+    </div>
+    <div class="row setup-content" id="step-5">
+      <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
+          <h3> Marchandises :</h3>
+          <div class="col-md-6">
+            <div class="form-group">
+
+              <input  maxlength="100" type="text" class="form-control" placeholder="KG de papier toilette/ an :"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Papier en nombre de rames :"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="% de papier recyclés :"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="PC + ecran CRT en unités :"  />
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input  maxlength="100" type="text" class="form-control" placeholder="PC + ecran LCD en unités :"  />
+              <input maxlength="100" type="text" class="form-control" placeholder="Serveur en unités :" />
+              <input maxlength="100" type="text" class="form-control" placeholder="Ordinateur portable en unités :" />
+              <input maxlength="100" type="text" class="form-control" placeholder="Rétro-projecteur en unités :" />
+
+
+            </div>
+          </div>
+          <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+        </div>
+      </div>
+    </div>
+    <div class="row setup-content" id="step-6">
+      <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
+          <h3> Marchandises :</h3>
+          <div class="col-md-6">
+            <div class="form-group">
+
+              <input  maxlength="100" type="text" class="form-control" placeholder="Imprimantes de bureau en unités :"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Photocopieur(multifonction) en unités :"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Fax en unités :"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Bureaux en unités :"  />
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input  maxlength="100" type="text" class="form-control" placeholder="Chaise en unités :"  />
+              <input maxlength="100" type="text" class="form-control" placeholder="Armoires en unités :" />
+              <input maxlength="100" type="text" class="form-control" placeholder="Détergents en unités :" />
+              <input maxlength="100" type="text" class="form-control" placeholder="Publications en kg / an :" />
+
+
+            </div>
+          </div>
+          <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+        </div>
+      </div>
+    </div>
+    <div class="row setup-content" id="step-7">
+      <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
+          <h3> Déchets :</h3>
+          <div class="col-md-6">
+            <div class="form-group">
+
+              <input  maxlength="100" type="text" class="form-control" placeholder="Déchets organiques en kg / an :"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Cartons en kg / an:"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Papiers en kg / an :"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Plastiques / metal / canette en kg / an :"  />
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input  maxlength="100" type="text" class="form-control" placeholder="Total en kg / an :"  />
+              <input maxlength="100" type="text" class="form-control" placeholder="Déchets dangereux en kg / an :" />
+              <input maxlength="100" type="text" class="form-control" placeholder="Verre en kg / an  :" />
+
+
+
+            </div>
+          </div>
+          <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
         </div>
       </div>
     </div>
