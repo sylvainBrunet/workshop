@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { SimulatorComponent } from './simulator/simulator.component';
 import { ResultComponent } from './result/result.component';
+import { TestbillyComponent } from './testbilly/testbilly.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     SimulatorComponent,
-    ResultComponent
+    ResultComponent,
+    TestbillyComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,7 @@ import { ResultComponent } from './result/result.component';
         },
         {
           path: 'simulateur',
-          component: SimulatorComponent
+          component: TestbillyComponent
         },
   ])
   ],
