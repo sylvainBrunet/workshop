@@ -3,7 +3,7 @@
   <div class="stepwizard col-md-offset-3">
     <div class="stepwizard-row setup-panel">
       <div class="stepwizard-step">
-        <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+        <a href="#step-2" type="button" class="btn btn-primary btn-circle">1</a>
         <p>Company</p>
       </div>
       <div class="stepwizard-step">
@@ -40,6 +40,7 @@
   </div>
 
   <form role="form" action="" method="post">
+
     <div class="row setup-content" id="step-1">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
@@ -68,18 +69,22 @@
     <div class="row setup-content" id="step-2">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
-          <h3>Building</h3>
+          <h3> Company</h3>
           <div class="form-group">
-            <label class="control-label">Area occupied (m3) :</label>
-            <input  maxlength="100" type="text" class="form-control" placeholder="Area occupied"  />
+            <label class="control-label">Company's Name :</label>
+            <input  maxlength="100" type="text" class="form-control" placeholder="Company's Name" value="Ynov" />
           </div>
           <div class="form-group">
-            <label class="control-label">Floor area (m2) :</label>
-            <input maxlength="100" type="text" class="form-control" placeholder="Floor area" />
+            <label class="control-label">Activity :</label>
+            <input maxlength="100" type="text" class="form-control" placeholder="Activity" value="Ecole" />
           </div>
           <div class="form-group">
-            <label class="control-label">Green space area(m2) :</label>
-            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Green space area" />
+            <label class="control-label">Number of Employees :</label>
+            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Number of Employees" value="300" />
+          </div>
+          <div class="form-group">
+            <label class="control-label">Company's Postal Code :</label>
+            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Postal Code" value="69007" />
           </div>
 
           <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
@@ -89,14 +94,37 @@
     <div class="row setup-content" id="step-3">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
+          <h3>Building</h3>
+          <div class="form-group">
+            <label class="control-label">Area occupied (m3) :</label>
+            <input  maxlength="100" type="text" class="form-control" placeholder="Area occupied" value="3837 m3"  />
+          </div>
+          <div class="form-group">
+            <label class="control-label">Floor area (m2) :</label>
+            <input maxlength="100" type="text" class="form-control" placeholder="Floor area" value="1535 hauteur sous plafond 2.5m" />
+          </div>
+          <div class="form-group">
+            <label class="control-label">Green space area(m2) :</label>
+            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Green space area" value="0" />
+          </div>
+
+          <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+        </div>
+      </div>
+    </div>
+    <div class="row setup-content" id="step-4">
+      <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
           <h3> Energy</h3>
           <div class="form-group">
+
             <label class="control-label">Consumption KWh/year :</label>
-            <input  maxlength="100" type="text" class="form-control" placeholder="Consomation KWh/year"  />
+            <input  maxlength="100" type="text" class="form-control" placeholder="Consomation KWh/year" value="15000 Kwh/an" />
           </div>
           <div class="form-group">
             <label class="control-label">% Share of green electricity :</label>
-            <input maxlength="100" type="text" class="form-control" placeholder="% Share of green electricity" />
+            <input maxlength="100" type="text" class="form-control" placeholder="% Share of green electricity" value="0" />
+
           </div>
           <div class="form-group">
             <label class="control-label">Heating consumption according to type :</label>
@@ -106,23 +134,27 @@
           </div>
           <h3> Eau</h3>
           <div class="form-group">
+
             <label class="control-label">Consumption in m3 :</label>
-            <textarea required="required" class="form-control" placeholder="Consumption in m3" ></textarea>
+            <input required="required" class="form-control" placeholder="Consumption in m3" value=" 1160M3/an"></input>
+
           </div>
           <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
         </div>
       </div>
     </div>
-    <div class="row setup-content" id="step-4">
+    <div class="row setup-content" id="step-5">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
           <h3> Mobility</h3>
           <div class="form-group">
+
             <label class="control-label">Business trip :</label>
-            <input  maxlength="100" type="text" class="form-control" placeholder="Total km/year"  />
-            <input  maxlength="100" type="text" class="form-control" placeholder="Soft ride (bike, walking) : km/year"  />
-            <input  maxlength="100" type="text" class="form-control" placeholder="hybrid car : km/year"  />
+            <input  maxlength="100" type="text" class="form-control" placeholder="Total km/year" value="12 000km/an" />
+            <input  maxlength="100" type="text" class="form-control" placeholder="Soft ride (bike, walking) : km/year" value="0km/an"  />
+            <input  maxlength="100" type="text" class="form-control" placeholder="hybrid car : km/year" value="0km/an" />
             <input  maxlength="100" type="text" class="form-control" placeholder="Electric Car : km/year"  />
+
           </div>
           <div class="form-group">
             <label class="control-label">Company's Parking :</label>
@@ -134,27 +166,30 @@
         </div>
       </div>
     </div>
-    <div class="row setup-content" id="step-5">
+    <div class="row setup-content" id="step-6">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
           <h3> Meals :</h3>
           <div class="col-md-6">
             <div class="form-group">
 
-              <input  maxlength="100" type="text" class="form-control" placeholder="Cafeteria :"  />
-              <input  maxlength="100" type="text" class="form-control" placeholder="Number of hot meals (meat / fish) / year :"  />
-              <input  maxlength="100" type="text" class="form-control" placeholder="Number of hot meals (vegetarian) / year :"  />
-              <input  maxlength="100" type="text" class="form-control" placeholder="Tee en kg /year :"  />
-              <input  maxlength="100" type="text" class="form-control" placeholder="Soft drink in L / year :"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Cafeteria :" value="Non" />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Number of hot meals (meat / fish) / year :"  value="6360 repas/an" />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Number of hot meals (vegetarian) / year :" value="0" />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Tee en kg /year :" value="2Kg/an"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Soft drink in L / year :" value="4976L/an"  />
+
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input maxlength="100" type="text" class="form-control" placeholder="Water in L/year :" />
-              <input maxlength="100" type="text" class="form-control" placeholder="Sugar in Kg / year :" />
-              <input maxlength="100" type="text" class="form-control" placeholder="Milk en L/year :" />
-              <input maxlength="100" type="text" class="form-control" placeholder="Cafee en kg/year :" />
-              <input maxlength="100" type="text" class="form-control" placeholder="Number of associated machines (Fridge, Microwave, etc ...) :" />
+
+              <input maxlength="100" type="text" class="form-control" placeholder="Water in L/year :" value="4976L/an" />
+              <input maxlength="100" type="text" class="form-control" placeholder="Sugar in Kg / year :" value="2kg"/>
+              <input maxlength="100" type="text" class="form-control" placeholder="Milk en L/year :" alue="0L"/>
+              <input maxlength="100" type="text" class="form-control" placeholder="Cafee en kg/year :" value="15Kg"/>
+              <input maxlength="100" type="text" class="form-control" placeholder="Number of associated machines (Fridge, Microwave, etc ...) :" value="15"/>
+
 
             </div>
           </div>
@@ -162,7 +197,7 @@
         </div>
       </div>
     </div>
-    <div class="row setup-content" id="step-6">
+    <div class="row setup-content" id="step-7">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
           <h3> Marchandises :</h3>
@@ -190,7 +225,7 @@
         </div>
       </div>
     </div>
-    <div class="row setup-content" id="step-7">
+    <div class="row setup-content" id="step-8">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
           <h3> Marchandises :</h3>
@@ -218,7 +253,7 @@
         </div>
       </div>
     </div>
-    <div class="row setup-content" id="step-8">
+    <div class="row setup-content" id="step-9">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
           <h3> Déchets :</h3>
