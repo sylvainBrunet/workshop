@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router,) { }
 
   ngOnInit() {
+  }
+
+  public scrollElement(sectionId: string) {
+    let element = document.getElementById(sectionId);
+    if(element == null)
+    {
+      this.router.navigate(['/home']);
+    }
+    else
+    {
+      element.scrollIntoView(true);
+    }
   }
 
 }

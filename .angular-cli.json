@@ -21,7 +21,10 @@
       "styles": [
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "./assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js",
+        "./assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
