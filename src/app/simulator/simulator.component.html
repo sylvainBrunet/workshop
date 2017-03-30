@@ -97,23 +97,27 @@
         <div class="col-md-12">
           <h3> Energy</h3>
           <div class="form-group">
-            <label class="control-label">Consomation KWh/year :</label>
-            <input  maxlength="100" type="text" class="form-control" placeholder="Consomation KWh/year" value="15000 Kwh/an"  />
+
+            <label class="control-label">Consumption KWh/year :</label>
+            <input  maxlength="100" type="text" class="form-control" placeholder="Consomation KWh/year" value="15000 Kwh/an" />
           </div>
           <div class="form-group">
-            <label class="control-label">Part en % d'électricité verte :</label>
-            <input maxlength="100" type="text" class="form-control" placeholder="" value="0" />
+            <label class="control-label">% Share of green electricity :</label>
+            <input maxlength="100" type="text" class="form-control" placeholder="% Share of green electricity" value="0" />
+
           </div>
           <div class="form-group">
-            <label class="control-label">Consommation chauffage en fonction du type :</label>
-            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Electrique KWh/an :" />
+            <label class="control-label">Heating consumption according to type :</label>
+            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Electric KWh/an :" />
             <input maxlength="100" type="text" required="required" class="form-control" placeholder="Gaz KWh/an :" />
-            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Mazout: L/an :" />
+            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Fuel: L/an :" />
           </div>
           <h3> Eau</h3>
           <div class="form-group">
-            <label class="control-label">Consommation en m3 :</label>
-            <input  class="form-control" placeholder="" value=" 1160M3/an" />
+
+            <label class="control-label">Consumption in m3 :</label>
+            <input required="required" class="form-control" placeholder="Consumption in m3" value=" 1160M3/an">
+
           </div>
           <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
         </div>
@@ -122,18 +126,20 @@
     <div class="row setup-content" id="step-4">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
-          <h3> Mobilité</h3>
+          <h3> Mobility</h3>
           <div class="form-group">
-            <label class="control-label">Déplacement professionnel :</label>
-            <input  maxlength="100" type="text" class="form-control" placeholder="Total km/an" value="12 000km/an"  />
-            <input  maxlength="100" type="text" class="form-control" placeholder="Déplacement doux( vélo, marche) : km/an" value="0km/an" />
-            <input  maxlength="100" type="text" class="form-control" placeholder="Voiture hybride : km/an" value="0km/an"  />
-            <input  maxlength="100" type="text" class="form-control" placeholder="Voiture Electrique : km/an"  />
+
+            <label class="control-label">Business trip :</label>
+            <input  maxlength="100" type="text" class="form-control" placeholder="Total km/year" value="12 000km/an" />
+            <input  maxlength="100" type="text" class="form-control" placeholder="Soft ride (bike, walking) : km/year" value="0km/an"  />
+            <input  maxlength="100" type="text" class="form-control" placeholder="hybrid car : km/year" value="0km/an" />
+            <input  maxlength="100" type="text" class="form-control" placeholder="Electric Car : km/year"  />
+
           </div>
           <div class="form-group">
-            <label class="control-label">Parking entreprise :</label>
-            <input maxlength="100" type="text" class="form-control" placeholder="Nombre d'employés véhiculés" />
-            <input maxlength="100" type="text" class="form-control" placeholder="Nombre de place occupées sur le parking" />
+            <label class="control-label">Company's Parking :</label>
+            <input maxlength="100" type="text" class="form-control" placeholder="Number of Employees Carried" />
+            <input maxlength="100" type="text" class="form-control" placeholder="Number of seats occupied in the car park" />
           </div>
 
           <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
@@ -143,24 +149,27 @@
     <div class="row setup-content" id="step-5">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
-          <h3> Repas :</h3>
+          <h3> Meals :</h3>
           <div class="col-md-6">
             <div class="form-group">
 
-              <input  maxlength="100" type="text" class="form-control" placeholder="Cafétaria d'entreprise :" value="Non" />
-              <input  maxlength="100" type="text" class="form-control" placeholder="Nombre de repas chaud(viande/poisson) /an :" value="6360 repas/an"  />
-              <input  maxlength="100" type="text" class="form-control" placeholder="Nombre de repas chaud(végétarien) /an :" value="0" />
-              <input  maxlength="100" type="text" class="form-control" placeholder="Thé en kg /an :" value="2Kg/an" />
-              <input  maxlength="100" type="text" class="form-control" placeholder="Boisson soft en L/an :" value="4976L/an" />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Cafeteria :" value="Non" />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Number of hot meals (meat / fish) / year :"  value="6360 repas/an" />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Number of hot meals (vegetarian) / year :" value="0" />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Tee en kg /year :" value="2Kg/an"  />
+              <input  maxlength="100" type="text" class="form-control" placeholder="Soft drink in L / year :" value="4976L/an"  />
+
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input maxlength="100" type="text" class="form-control" placeholder="Eau en L/an :" value="4976L/an" />
-              <input maxlength="100" type="text" class="form-control" placeholder="Sucre en Kg/an :" value="2kg" />
-              <input maxlength="100" type="text" class="form-control" placeholder="Lait en L/an :" value="0L" />
-              <input maxlength="100" type="text" class="form-control" placeholder="Café en kg/an :" value="15Kg"/>
-              <input maxlength="100" type="text" class="form-control" placeholder="Nombre de machine associées (Frigo, Micro-onde, etc …) :" value="15"/>
+
+              <input maxlength="100" type="text" class="form-control" placeholder="Water in L/year :" value="4976L/an" />
+              <input maxlength="100" type="text" class="form-control" placeholder="Sugar in Kg / year :" value="2kg"/>
+              <input maxlength="100" type="text" class="form-control" placeholder="Milk en L/year :" alue="0L"/>
+              <input maxlength="100" type="text" class="form-control" placeholder="Cafee en kg/year :" value="15Kg"/>
+              <input maxlength="100" type="text" class="form-control" placeholder="Number of associated machines (Fridge, Microwave, etc ...) :" value="15"/>
+
 
             </div>
           </div>
