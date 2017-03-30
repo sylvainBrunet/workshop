@@ -9,6 +9,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { SimulatorComponent } from './simulator/simulator.component';
 import { ResultComponent } from './result/result.component';
 import { TestbillyComponent } from './testbilly/testbilly.component';
+import { MenuComponent } from './menu/menu.component';
+import { PreloaderComponent } from './preloader/preloader.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { TestbillyComponent } from './testbilly/testbilly.component';
     HomepageComponent,
     SimulatorComponent,
     ResultComponent,
-    TestbillyComponent
+    TestbillyComponent,
+    MenuComponent,
+    PreloaderComponent
   ],
   imports: [
     BrowserModule,
