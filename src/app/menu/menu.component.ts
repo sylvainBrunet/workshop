@@ -18,6 +18,7 @@ export class MenuComponent implements OnInit {
     if(element == null)
     {
       this.router.navigate(['/home']);
+      location.reload();
     }
     else
     {

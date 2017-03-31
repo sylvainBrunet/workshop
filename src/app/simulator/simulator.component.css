@@ -1,6 +1,12 @@
 body {
   margin-top:40px;
 }
+.stepwizard-step {
+  display: none;
+}
+#step-0 {
+  display: block;
+}
 .stepwizard-step p {
   margin-top: 10px;
 }
